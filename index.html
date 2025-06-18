@@ -7,3 +7,42 @@ SabbirTopupBD/
 │   └── app.js              ✅ JavaScript কাজ করে এখানে (যেমন: Confirm Button, UID input)
 ├── assets/
 │   └── icons/              ✅ এখানে আপনি logo/icon রাখবেন (ff.png, pubg.png, tiktok.svg)
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Sabbir Topup BD</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sabbir Topup BD</h1>
+    <nav>
+      <button onclick="showSection('balance')">Add Balance</button>
+      <button onclick="showSection('topup')">UID Topup</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="balance">
+      <h2>টাকা Add করুন</h2>
+      <input type="number" placeholder="Amount">
+      <button onclick="addBalance()">Confirm</button>
+    </section>
+
+    <section id="topup" style="display:none;">
+      <h2>UID টপআপ</h2>
+      <input type="text" placeholder="Game UID">
+      <select>
+        <option>25💎 = 25৳</option>
+        <option>50💎 = 45৳</option>
+        <!-- আরো যোগ করুন -->
+      </select>
+      <button onclick="submitTopup()">Confirm</button>
+    </section>
+  </main>
+
+  <footer>© 2025 Sabbir Topup BD</footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
