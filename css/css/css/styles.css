@@ -1,1 +1,33 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
 
+header {
+  background: #008080;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px 20px;
+  background: #0abde3;
+  border: none;
+  color: white;
+  border-radius: 8px;
+}
+
+section {
+  padding: 1rem;
+}
+
+input, select {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+}
