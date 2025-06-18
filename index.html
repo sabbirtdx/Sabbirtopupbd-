@@ -46,3 +46,19 @@ SabbirTopupBD/
   <script src="js/app.js"></script>
 </body>
 </html>
+<div class="add-balance-section">
+  <h2>Add Balance (Nagad)</h2>
+  <label>পছন্দের পরিমাণ নির্বাচন করুন:</label>
+  <select id="amount">
+    <option value="100">১০০ টাকা</option>
+    <option value="200">২০০ টাকা</option>
+    <option value="500">৫০০ টাকা</option>
+  </select>
+
+  <label>Txn ID দিন:</label>
+  <input type="text" id="txnId" placeholder="নগদ লেনদেন আইডি দিন" />
+
+  <button onclick="verifyPayment()">Confirm Add Balance</button>
+
+  <p id="message"></p>
+</div>
